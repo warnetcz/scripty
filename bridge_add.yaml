@@ -1,0 +1,13 @@
+---
+- name: RouterOS test with network_cli connection
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Get version OS
+      community.routeros.command:
+        commands:
+          - /system resource print
+      register: system_resource_print
+    - name: Print its output
+      ansible.builtin.debug:
+        var: system_resource_print.stdout_lines
