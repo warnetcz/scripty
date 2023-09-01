@@ -11,5 +11,3 @@
     - name: Print its output
       ansible.builtin.debug:
         var: system_resource_print.stdout_lines
-
----
