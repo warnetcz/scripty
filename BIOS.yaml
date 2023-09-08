@@ -8,7 +8,6 @@
         commands:
          - /system routerboard upgrade
          - y
-         - /
          - /system reboot
          - /
       register: system_resource_print
