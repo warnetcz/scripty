@@ -3,7 +3,7 @@
   hosts: routers
   gather_facts: false
   tasks:
-    - name: Get version OS
+    - name: Upgrade OS 7.0
       community.routeros.command:
         commands:
           - /system package update set channel=upgrade
