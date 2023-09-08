@@ -6,8 +6,6 @@
     - name: Upgrade BIOS
       community.routeros.command:
         commands:
-         - /system routerboard upgrade
-         - y
          - /system reboot
          - /
       register: system_resource_print
