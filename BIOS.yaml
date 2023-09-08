@@ -8,6 +8,7 @@
         commands:
          - /system routerboard upgrade
          - :delay 5s
+         - :put y
          - /system reboot
          - :put y
          - /
