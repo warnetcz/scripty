@@ -7,9 +7,10 @@
       community.routeros.command:
         commands:
          - /system routerboard upgrade
-         - :delay 5s/
-         - system reboot;
-         - :put y/
+         - :delay 5s
+         - /system reboot;
+         - :put y
+         - /
       register: system_resource_print
     - name: Print its output
       ansible.builtin.debug:
