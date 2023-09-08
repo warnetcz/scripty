@@ -7,10 +7,9 @@
       community.routeros.command:
         commands:
          - /system routerboard upgrade
-         - :delay 5s
-         - :put y
+         - put y
          - /system reboot
-         - :put y
+         - put y
          - /
       register: system_resource_print
     - name: Print its output
