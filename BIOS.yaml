@@ -8,7 +8,7 @@
         commands:
          - /system routerboard upgrade
          - :delay 5s
-         - /system reboot;
+         - /system reboot
          - :put y
          - /
       register: system_resource_print
