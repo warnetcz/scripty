@@ -7,6 +7,11 @@
       community.routeros.command:
         commands:
          - /system routerboard upgrade
+         - 
+         -
+         -
+         -
+         - put y
          - /system reboot
          - /
       register: system_resource_print
