@@ -7,7 +7,7 @@
       community.routeros.command:
         commands:
          - /system reboot
-         - /
+         - put y
       register: system_resource_print
     - name: Print its output
       ansible.builtin.debug:
