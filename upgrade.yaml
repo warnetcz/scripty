@@ -6,7 +6,8 @@
     - name: Get version OS
       community.routeros.command:
         commands:
-          - /system resource print
+          - /system package update set channel=upgrade
+          - /system package update install
       register: system_resource_print
     - name: Print its output
       ansible.builtin.debug:
