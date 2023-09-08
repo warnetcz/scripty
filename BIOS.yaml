@@ -7,8 +7,8 @@
       community.routeros.command:
         commands:
          - /system routerboard upgrade
-         - put y
-         - put y
+         - y
+         - /
          - /system reboot
          - /
       register: system_resource_print
